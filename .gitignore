@@ -1,0 +1,40 @@
+# Data & outputs
+datasets/
+outputs/
+*.npy
+*.csv
+*.zip
+*.tar.gz
+*.mp4
+*.avi
+*.mkv
+
+# Notebooks (run on Kaggle)
+notebooks/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+venv/
+.venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Cline context
+.context/

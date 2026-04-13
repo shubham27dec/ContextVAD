@@ -1,0 +1,22 @@
+# ContextVAD — Dependencies
+
+# Core
+numpy>=1.24
+opencv-python>=4.8
+Pillow>=9.0
+tqdm>=4.60
+pandas>=2.0
+
+# CLIP encoder (Stage 1)
+git+https://github.com/openai/CLIP.git
+torch>=2.0
+torchvision>=0.15
+
+# Evaluation & post-processing (Stages 4-5)
+scikit-learn>=1.3
+scipy>=1.10
+faiss-cpu>=1.7
+
+# LLM scoring — Stage 3 (GPU machine only, VideoLLaMA2 cloned separately)
+# transformers>=4.35
+# accelerate>=0.25
