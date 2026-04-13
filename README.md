@@ -113,22 +113,6 @@ python src/evaluate.py --csv outputs/ucf_crime/scores.csv --labels datasets/ucf_
 python src/evaluate.py --csv outputs/xd_violence/scores.csv --labels datasets/xd-violence/annotations.txt --video_dir datasets/xd-violence/videos/ --sweep
 ```
 
-## Results
-
-### UCF-Crime (test set, 290 videos)
-
-| Method | AUC-ROC |
-|--------|---------|
-| LAVAD (CVPR 2024) | 81.55% |
-| **ContextVAD (ours)** | **82.21%** |
-
-### XD-Violence (test set, 800 videos)
-
-| Method | AP |
-|--------|-----|
-| LAVAD (CVPR 2024) | 78.08% |
-| **ContextVAD (ours)** | *TBD* |
-
 ## Requirements
 
 ```bash
