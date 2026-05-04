@@ -14,7 +14,7 @@ Video → CLIP ViT-L/14 → Semantic Spikes → Segmentation → VideoLLaMA2 Sco
 | 2a | `semantic_spikes.py` | Scene change detection via cosine similarity drops |
 | 2b | `segment_generator.py` | Split videos at spike boundaries, cut segment clips |
 | 3 | `llm_scorer.py` | VideoLLaMA2.1-7B-16F anomaly scoring (P2+sumCtx prompt) |
-| 4 | `postprocessing.py` | AnomMax + FAISS KNN score refinement + Gaussian smoothing |
+| 4 | `postprocessing.py` | FAISS KNN score refinement + Gaussian smoothing |
 | 5 | `evaluate.py` | Frame-level AUC-ROC + AP evaluation |
 
 ## Repository Structure
@@ -71,7 +71,7 @@ python src/llm_scorer.py --manifest outputs/ucf_crime/segments/segment_manifest.
 ### Stage 4: Post-Processing (CPU, no GPU needed)
 
 ```bash
-# Full pipeline: AnomMax + KNN sweep
+# Full pipeline: KNN sweep
 python src/postprocessing.py \
   --base_csv outputs/ucf_crime/scores.csv \
   --embed_dir outputs/ucf_crime/embeddings/ \
